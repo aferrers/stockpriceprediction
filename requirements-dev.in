@@ -5,3 +5,6 @@ seaborn
 statsmodels 
 scikit-learn 
 sktime
+yfinance
+pmdarima
+prophet
