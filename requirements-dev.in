@@ -1,5 +1,6 @@
 pandas
 numpy
+warnings
 matplotlib
 seaborn 
 statsmodels 
@@ -8,3 +9,4 @@ sktime
 yfinance
 pmdarima
 prophet
+jupyter
