@@ -130,13 +130,22 @@ Machine learning regressors based on tabular data (method: sktime's make_reducti
 
 - KNN Regressor: satisfactory results made this model, even though it was not a time sereis, a strong contender. It was selected for the final test round to assess whether after cross validation it can be expected perform as well as the other models.
 
-### Model Comparison round 2:
+### Model Comparison final round:
 
-- Model 1. t(1) simple exponential smoothing (SES) * gridsearch 
-- Model 2 t(0) Prophet
-- Model 3. t(0) ARIMA
-- Model 4. Combi Model: combined model of SES & Prophet
+- Model 1. t(1) simple exponential smoothing (SES) * gridsearch :
+params: smoothing_level': 0.5, 'sp': 365, 'trend': None
+
+this model is recommended as the go-to model for its simple methodology and ease-of use while providing overall good results in accuracy
+
+- Model 2 t(0) Prophet: should be evaluated and understood further before utilization
+
+- Model 3. t(0) ARIMA 1_1_0: similar results to SES, and as this model is more complex, the usage of SES would be recommended instead
+
+- Model 4. Combi Model: combined model of SES & Prophet: could be used to find a balance between the flat forecast of the SES model and the prophet forecast.
+
 - Model 5. t(1) KNN Regressor:
+params: win_lengh = 10; n= 5
+This model should be evaluated further to understand how the distances between the different points affeect the forecasted values.
 
 ## Future Work
 
