@@ -12,7 +12,7 @@ The project's main goal is to gain understanding of diverse forecasting models l
 
 i) Explore classical statistical forecasting models
 
-ii) Optimization applying of machine learning techniques and tools in python
+ii) Forecasting Optimization applying machine learning techniques and tools in python
 
 iii) Assess value-added of using these forecasting models for Financial Analysis
 
